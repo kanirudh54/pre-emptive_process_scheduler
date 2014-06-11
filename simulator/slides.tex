@@ -1,0 +1,69 @@
+\documentclass[]{beamer}
+\usepackage{beamerthemesplit}
+\begin{document}
+\title{CS 244: System Programming\\ Preemptive Process Scheduler}
+\author{Indian Institute of Technology, Guwahati\\}
+\begin{frame}
+   \titlepage
+\end{frame}
+\begin{frame}
+\frametitle{Outline}
+\begin{itemize}
+\item Introduction
+\item Softwares Requirements
+\item Inputs and Outputs
+\item Logic and Code Explanation
+	\begin{itemize}
+	\item Round Robin Scheduler
+	\item Preemitive Process Scheduler
+	\end{itemize}
+
+\end{itemize}
+\end{frame}
+\begin{frame}
+\frametitle{Introduction}
+In this project we tried to make \emph{Preemptive Process Scheduler} using Python as our language and Gnuplot to draw graphs. We also made a \emph{Round-Robin Scheduler} for comparision with \emph{Preemptive Process Scheduler}.\\ We plotted two types of graphs:
+\begin{itemize}
+\item Misses vs Number of processors
+\item Misses vs Number of tasks.
+\end{itemize}
+\begin{block}{Softwares Requirements}
+We need Python 2.7, Gnuplot, Gnuplot.py, numpy preinstalled before running the code. Gnuplot is used to make 2-D and 3-D graps where as Gnuplot.py interfaces Gnuplot with python. Numpy gives addition mathematical capabilities to Python.
+\end{block}
+\end{frame}
+\begin{frame}
+\frametitle{Inputs}
+\begin{block}{Inputs}
+Inputs are given in a \textit{generate.txt} file. The format of input is as follows:
+\begin{itemize}
+\item $1^{st}$ line contains the number of test cases.
+\item $2^{nd}$ line contains number of processors.
+\item $3^{rd}$ line contains number of tasks.
+\item $4^{th}$ line contains processing time.
+\item So on and so forth ...
+\end{itemize}
+\end{block}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Logic and Code Explanation}
+\begin{block}{Round Robin Scheduler}
+Round-robin (RR) is process scheduling algorithm. As the term is generally used, time slices are assigned to each process in equal portions and in circular order, handling all processes without priority (also known as cyclic executive). 
+\end{block}
+\begin{block}{Preemptive Process Scheduler}
+It is anothor algorithm to allocate tasks to processors. In this procedure we use heap data structure to simulate priority queue. Allocation is done on deadlines. Misses are calculated and two graphs are plotted. $1^{st}$ graph contains \textit{Misses vs Number of processors} and $2^{nd}$ graph contains \textit{Misses vs Number of processors} with both algorithms.
+\end{block}
+\end{frame}
+\begin{frame}
+\frametitle{Thank You}
+\begin{block}{Developed By}
+\begin{itemize}
+\item Anirudh 120101064
+\item Roshan 120101062
+\item Sathwik 120101051
+\end{itemize}
+\end{block}
+
+\end{frame}
+\end{document}
